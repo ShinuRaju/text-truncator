@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+        <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+        <!-- https://cdnjs.com/libraries/font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <title>Text Truncator</title>
+        <style>
+            textarea{
+                height: 30vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="text-center display-1 mt-5 mb-3">Text Truncator</h1>
+        <p class="text-center mx-auto  w-75 mb-5">World's simplest browser-based utility for truncating text. Load your text in the input form on the left and you'll automatically get truncated text on the right. Powerful, free, and fast. Load plain text – get shortened text.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="inputText">
+                            <h5>Input Text :</h5>
+                        </label>
+                        <textarea
+                            id="inputText"
+                            class="form-control"
+                            name=""
+                            rows="3"
+                            placeholder="enter the sentence ..."
+                        ></textarea>
+                    </div>
+                    <button class="btn btn-outline-dark my-3">
+                        Copy To Clipboard
+                    </button>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                        <label for="truncateText">
+                            <h5>Truncated Text :</h5>
+                        </label>
+                        <textarea
+                            id="truncateText"
+                            class="form-control"
+                            name=""
+                            rows="3"
+                            placeholder="truncated sentence . . ."
+                        ></textarea>
+                    </div>
+                    <button class="btn btn-outline-dark my-3">
+                        Copy To Clipboard
+                    </button>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-sm-4 mb-4">
+                        <h6>Truncation Side :</h6>
+                        <div class=" radio mb-3">
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    id="truncateRight"
+                                    value="right"
+                                    name="radio"
+                                    checked
+                                >
+                                <label class="form-check-label" for="truncateRight">Right Truncate</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    id="truncateLeft"
+                                    value="left"
+                                    name="radio"
+                                >
+                                <label class="form-check-label" for="truncateLeft">Left Truncate</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-5">
+                        <h6>Length of Text :</h6>
+                         
+                            <input
+                                type="number"
+                                class="form-control textLength"
+                                placeholder="text length . . ."
+                                value='5'
+                                 
+                            >
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+<script src="app.js"></script>
+</body>
+</html>
